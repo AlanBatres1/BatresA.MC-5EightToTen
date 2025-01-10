@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BatresA.MC#5EightToTen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f2b26254144b243ae47ca13695c27b08f5c0853")]
 [assembly: System.Reflection.AssemblyProductAttribute("BatresA.MC#5EightToTen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BatresA.MC#5EightToTen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

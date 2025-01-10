@@ -7,61 +7,83 @@ namespace BatresA.MC_5EightToTen.Services
 {
     public class GuessItServices
     {
-        public string GuessIt(string difficulty)
-        {
-            int guess;
-            int attempts;
-            int correctNum;
             Random rng = new Random();
-
-            switch (difficulty)
+        public string GuessItEasy(string guess)
+        {
+            int easy = rng.Next(1, 11);
+            bool isValid = int.TryParse(guess, out int num);
+            if (isValid == false)
             {
-                case "Easy":
-                    correctNum = rng.Next(1, 11);
-                    return "Guess a number 1-10";
-
-                case "Medium":
-                    correctNum = rng.Next(1, 51);
-                    return "Guess a number 1-50";
-
-                case "Hard":
-                    correctNum = rng.Next(1, 101);
-                    return "Guess a number 1-100";
-
-                default:
-                    return "Invalid input please type in exactly (Easy), (Medium), (Hard)";
+                return "Integers only";
             }
 
-            Console.WriteLine("Try to guess the winning number!");
-            while (isValid == true)
+                if (num > easy)
+                {
+                    return "Your guess was too high try again.";
+
+                }
+                else if (num < easy)
+                {
+                    return "Your guess was too low try again.";
+
+                }
+                else if (num == easy)
+                {
+                    return "You Won!";
+                }
+                return"";
+        }
+
+        public string GuessItMedium(string guess)
+        {
+            int easy = rng.Next(1, 51);
+            bool isValid = int.TryParse(guess, out int num);
+            if (isValid == false)
             {
-                string guessString = Console.ReadLine();
-                attempts++;
-                bool isInteger = int.TryParse(guessString, out guess);
-                while (isInteger == false)
-                {
-                    Console.WriteLine("Please Enter in an Integer");
-                    guessString = Console.ReadLine();
-                    attempts++;
-                    isInteger = int.TryParse(guessString, out guess);
-                }
-
-                if (guess > correctNum)
-                {
-                    Console.WriteLine("Your guess was too high try again.");
-
-                }
-                if (guess < correctNum)
-                {
-                    Console.WriteLine("Your guess was too low try again.");
-
-                }
-                if (guess == correctNum)
-                {
-                    Console.WriteLine("You Won!");
-                    Console.WriteLine($"It took {attempts} guesses.");
-                }
+                return "Integers only";
             }
+
+                if (num > easy)
+                {
+                    return "Your guess was too high try again.";
+
+                }
+                else if (num < easy)
+                {
+                    return "Your guess was too low try again.";
+
+                }
+                else if (num == easy)
+                {
+                    return "You Won!";
+                }
+                return"";
+        }
+
+        public string GuessItHard(string guess)
+        {
+            int easy = rng.Next(1, 101);
+            bool isValid = int.TryParse(guess, out int num);
+            if (isValid == false)
+            {
+                return "Integers only";
+            }
+
+                if (num > easy)
+                {
+                    return "Your guess was too high try again.";
+
+                }
+                else if (num < easy)
+                {
+                    return "Your guess was too low try again.";
+
+                }
+                else if (num == easy)
+                {
+                    return "You Won!";
+                }
+                return"";
         }
 
     }

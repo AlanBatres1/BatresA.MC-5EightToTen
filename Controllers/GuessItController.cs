@@ -19,11 +19,24 @@ namespace BatresA.MC_5EightToTen.Controllers
         }
 
         [HttpGet]
-        [Route("GuessIt/{guess}")]
-        
-            public string GuessIt(string difficulty, int guess)
+        [Route("GuessItEasy/{guess}")]
+            public string Easy(string guess)
             {
-                return _guessItServices.GuessIt(difficulty, guess);
+                return _guessItServices.GuessItEasy(guess);
+            }
+
+            [HttpGet]
+        [Route("GuessItMedium/{guess}")]
+            public string Medium(string guess)
+            {
+                return _guessItServices.GuessItMedium(guess);
+            }
+
+            [HttpGet]
+        [Route("GuessItHard/{guess}")]
+            public string Hard(string guess)
+            {
+                return _guessItServices.GuessItHard(guess);
             }
         
 

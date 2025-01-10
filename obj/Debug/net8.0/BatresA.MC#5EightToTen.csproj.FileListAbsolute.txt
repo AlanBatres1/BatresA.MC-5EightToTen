@@ -30,3 +30,4 @@
 /Users/alanbatres/Documents/Level 2/Week 1/BatresA.MC#5EightToTen/obj/Debug/net8.0/BatresA.MC#5EightToTen.pdb
 /Users/alanbatres/Documents/Level 2/Week 1/BatresA.MC#5EightToTen/obj/Debug/net8.0/BatresA.MC#5EightToTen.genruntimeconfig.cache
 /Users/alanbatres/Documents/Level 2/Week 1/BatresA.MC#5EightToTen/obj/Debug/net8.0/ref/BatresA.MC#5EightToTen.dll
+/Users/alanbatres/Documents/Level 2/Week 1/BatresA.MC#5EightToTen/obj/Debug/net8.0/BatresA.MC#5EightToTen.sourcelink.json
